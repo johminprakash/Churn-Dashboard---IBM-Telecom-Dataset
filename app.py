@@ -9,9 +9,9 @@ def load_models():
         aggressive_model=joblib.load("ml_models/aggressive_model.pkl")
         defensive_model=joblib.load("ml_models/defensive_model.pkl")
         
-        scaler=joblib.load(r"ml_models\scaler.pkl")
+        scaler=joblib.load(r"ml_models/scaler.pkl")
 
-        model_columns=joblib.load(r"ml_models\columns.pkl")
+        model_columns=joblib.load(r"ml_models/columns.pkl")
 
         return {"Accuracy": accuracy_model,"Aggressive":aggressive_model,"Defensive":defensive_model,"Scaler":scaler,"Columns":model_columns}
     except Exception as e:
